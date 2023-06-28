@@ -1,0 +1,194 @@
+#navigation ul , #taco ul, .connect ul{
+    color: #eb5428;
+    list-style-type: none;
+}
+
+#sides{
+    background-color: #7abfbf;
+}
+
+main{
+    background-color: #f2f2f2;
+}
+
+body{
+    background-color: rgba(122, 191, 191, .5);
+}
+
+h2, h1{
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+#directions, #ingredients, #navigation, footer, #taco{
+    background-color: #f2f2f2;
+}
+
+#sides h2{
+    text-align: center;
+}
+
+#taco ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+#taco li{
+    display: inline;
+    text-align: center;
+}
+
+.connect ul{
+    display: flex;
+}
+.connect li{
+    display: inline-block;
+    margin: 10px;
+    padding-bottom: 10px;
+}
+
+footer{
+    margin-top: 10px;
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer img{
+    order: 1;
+    width: 200px;
+    height: auto;
+    align-content: center;
+    text-align: center;
+}
+.footer p{
+    order: 2;
+    text-align: center;
+}
+
+#navigation a img{
+    width: 100px;
+    height: auto;
+}
+#navigation ul{
+    display: flex;
+}
+#navigation li{
+    display: inline;
+}
+h1{
+    font-size: 40px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+h2{
+    font-size: 30px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+h3{
+    font-size: 25px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+nav a, nav span, #navigation li, #connect li, footer{
+    font-size: 20px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+p, li, nav, input{
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media screen and (min-width: 414px) {
+    #navigation{
+        background-color: #ffff;
+    }
+    #sides{
+        display: block;
+    }
+    #taco img{
+        width: 414px;
+        height:auto
+    }
+    .menu-btn {
+        display: inline-block;
+        cursor: pointer;
+        padding: 10px;
+    }
+    
+    .menu-btn span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: #000;
+        margin-bottom: 5px;
+    }
+    #menu-toggle:checked ~ ul {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 768px){
+    #details{
+        align-content: center;
+        text-align: center;
+    }
+    #taco img{
+        width: 768px;
+        height:auto
+    }
+}
+
+@media screen and (min-width: 1280px){
+    #details{
+        color: #7abfbf;
+        background-color: #0d0d0d;
+        padding: 7px;
+        text-align: center;
+        align-content: center;
+        
+    }
+    #details ul{
+        display: flex;
+        list-style-type: none;
+        padding: 0;
+        justify-content: space-evenly;
+    }
+    #details li{
+        display: inline-block;
+        margin-right: 10px;
+        text-align: center;
+    }
+    #taco img{
+        width: 768px;
+        height:auto
+    }
+    
+}
+
+@media print {
+    body {
+      margin: 0.5in;
+      font-family: serif;
+    }
+
+    img {
+      display: none;
+      filter: grayscale(100%);
+    }
+
+    nav {
+      display: none;
+    }
+
+    a::after {
+      content: " (" attr(href) ")";
+    }
+    @page {
+        size: 1;
+        page-break-inside: avoid;
+      }
+}
