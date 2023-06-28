@@ -113,22 +113,6 @@ p, li, nav, input{
         width: 414px;
         height:auto
     }
-    .menu-btn {
-        display: inline-block;
-        cursor: pointer;
-        padding: 10px;
-    }
-    
-    .menu-btn span {
-        display: block;
-        width: 25px;
-        height: 3px;
-        background-color: #000;
-        margin-bottom: 5px;
-    }
-    #menu-toggle:checked ~ ul {
-        display: block;
-    }
 }
 
 @media screen and (min-width: 768px){
